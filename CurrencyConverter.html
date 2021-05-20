@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+    <script src="script.js"></script>
+</head>
+<body>
+<div>
+  <table>
+      <tr>
+          <th>Amount</th>
+          <th>From Currency</th>
+          <th>To Currency</th>
+      </tr>
+
+      <tr>
+          <td>
+                  <input type="number" id="amount">
+          </td>
+
+          <td>
+              <select name="Currencies" id="from">
+                  <option value="1">Vietnam Dong</option>
+                  <option value="23160">USD</option>
+              </select>
+          </td>
+
+          <td>
+                  <select name="Currencies" id="to">
+                      <option value="23160">USD</option>
+                      <option value="1">Vietnam Dong</option>
+                  </select>
+          </td>
+
+          <td>
+              <button type="button" style="background-color: mediumpurple" onclick="Convert(event)">Convert</button>
+          </td>
+      </tr>
+  </table>
+</div>
+
+<div>
+    <div id="result"></div>
+</div>
+
+</body>
+</html>
